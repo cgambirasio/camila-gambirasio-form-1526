@@ -1,0 +1,95 @@
+/* colors:
+#DDD
+#F5F5F5
+#6495ED */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formdiv {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#formstructure, .fname, .email, .message {
+    display: flex;
+    flex-direction: column;
+}
+
+.fname, .email, .message {
+    gap: 1rem;
+}
+
+#formstructure {
+    gap: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    background-color: #fefefe;
+    border: solid;
+    border-color: #ddd;
+    border-width: 0.5px;
+    padding: 1rem 0.75rem;
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    border-color: #F5F5F5;
+}
+
+input, textarea {
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #ddd;
+}
+
+
+#button {
+    margin: 0.25rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #6495ED;
+    border-radius: 3px;
+    border: none;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+
+
+/* ---responsiveness--- */
+
+/* phone */
+@media (max-width: 25rem) { 
+    .formdiv {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 25rem) and (max-width: 40rem) { 
+    .formdiv {
+        width: 80%;
+    }
+
+
+    #button {
+        width: 100%;
+    }
+}
+
+/* desktop */
+@media (min-width: 40rem) { 
+    .formdiv {
+        width: 50rem;
+    }
+
+}
